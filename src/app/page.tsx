@@ -33,13 +33,18 @@ export default function Home() {
   return (
     <main className="min-h-screen py-8">
       <div className="container mx-auto px-4">
-        <section className="text-center mb-12">
-          <span className="inline-block mb-4">
-            <Grid className="w-16 h-16 text-blue-600 mx-auto" />
-          </span>
+        <section className="text-center mb-5">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
             Ultimate Free Online Grid Maker for Artists
           </h1>
+          
+        </section>
+        
+        <div id="grid-maker" className="scroll-mt-8">
+          <GridMaker />
+        </div>
+        <section className="text-center mb-12">
+          
           <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-700 dark:text-gray-300">
             Transform your artistic process with professional drawing grids that perfect proportions, 
             scale artwork, and help transfer complex images with pinpoint accuracy.
@@ -67,10 +72,6 @@ export default function Home() {
             <ArrowRight className="w-4 h-4 ml-2" />
           </Link>
         </section>
-        
-        <div id="grid-maker" className="scroll-mt-8">
-          <GridMaker />
-        </div>
         
         <section className="mt-16 max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
@@ -207,7 +208,7 @@ export default function Home() {
             <p className="text-lg">
               No registration, download, or technical skills required. Simply adjust the settings in our intuitive 
               interface to create your perfect grid, then download or print for immediate use in your next art project. 
-              Join over 40,000 artists who trust our grid maker for their creative work.
+              Join over 1000+ artists who trust our grid maker for their creative work.
             </p>
             
             <div className="mt-8 space-y-4">
@@ -222,7 +223,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 p-8 rounded-2xl text-center">
+          <div className="bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 p-8 rounded-[2] text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Transform Your Artistic Process?</h2>
             <p className="text-lg mb-8 max-w-3xl mx-auto">
               Create your custom grid now and join thousands of artists who've elevated their work 

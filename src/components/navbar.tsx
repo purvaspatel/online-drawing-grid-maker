@@ -3,18 +3,19 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-
+import Image from "next/image";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b-2">
+    <header className="bg-white border-b border-blue-500">
+
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Left Side - Logo & Brand Name */}
         <div className="flex items-center space-x-3">
-          <img src="/next.svg" alt="Brand Logo" className="w-8 h-8" />
+          <Image src="/gridmakerlogo.png" alt="Brand Logo" className="w-12" />
           <Link href="/" className="text-xl font-bold text-gray-800">
-            MyBrand
+            Grid Maker
           </Link>
         </div>
 
@@ -23,7 +24,7 @@ export default function Navbar() {
           <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
             Grid Maker
           </Link>
-          <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition">
+          <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition">
             Blogs
           </Link>
           <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition">
@@ -32,8 +33,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          onClick={() => setMenuOpen(!menuOpen)} 
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-gray-700 focus:outline-none"
           aria-label="Toggle Menu"
         >
@@ -45,7 +46,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg border-t">
           <div className="flex flex-col space-y-3 py-4 px-6">
-            <Link href="/grid-maker" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
+            <Link href="/" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
               Grid Maker
             </Link>
             <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>

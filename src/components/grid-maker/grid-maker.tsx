@@ -3,9 +3,7 @@
 
 import { useState } from "react";
 import ImageUploader from "./image-uploader";
-import GridControls from "./grid-controls";
 import GridPreview from "./grid-preview";
-import PaperFormats from "./paper-formats";
 import { GridSettings, PaperFormat } from "@/types";
 import NextImage from "next/image";
 export default function GridMaker() {
@@ -34,7 +32,7 @@ export default function GridMaker() {
     setImage(imageDataUrl);
 
     // Get original image dimensions
-    const img = new Image();
+    const img = new window.Image();
     img.onload = () => {
       setOriginalImageDimensions({
         width: img.width,
@@ -54,8 +52,7 @@ export default function GridMaker() {
 
   return (
     <div className="container mx-auto p-4 ">
-      <h1 className="text-3xl font-bold mb-6">Free Online Drawing Grid Maker</h1>
-
+      
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-1">
           {!image ? (
@@ -184,18 +181,7 @@ export default function GridMaker() {
                         </label>
                       </div>
 
-                      <div className="flex items-center">
-                        <input
-                          id="adjustImageToFit"
-                          type="checkbox"
-                          checked={gridSettings.adjustImageToFit}
-                          onChange={(e) => updateGridSettings({ adjustImageToFit: e.target.checked })}
-                          className="h-4 w-4 rounded border-gray-300"
-                        />
-                        <label htmlFor="adjustImageToFit" className="ml-2 block text-sm">
-                          Adjust Image to Fit Grid
-                        </label>
-                      </div>
+                      
                     </div>
                   </div>
 
@@ -298,7 +284,7 @@ export default function GridMaker() {
             />
           ) : (
             <div className="h-auto bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-              <img
+              <NextImage
                 src="/purvagridmakerpreview.gif"
                 alt="Website Interface Preview"
                 className="w-full h-full object-contain p-2"
