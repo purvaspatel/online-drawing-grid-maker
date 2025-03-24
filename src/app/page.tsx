@@ -1,7 +1,6 @@
 import GridMaker from "@/components/grid-maker/grid-maker";
 import { Metadata } from "next";
 import { 
-  Grid, 
   Maximize, 
   Palette, 
   Download, 

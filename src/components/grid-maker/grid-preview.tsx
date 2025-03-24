@@ -33,7 +33,7 @@ export default function GridPreview({
     const img = new Image();
     img.onload = () => {
       // Calculate canvas dimensions while maintaining aspect ratio
-      let canvasWidth = 800; // Max width
+      const canvasWidth = 800; // Max width
       let canvasHeight;
 
       // Determine if we're forcing square grid
