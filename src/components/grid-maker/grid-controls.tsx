@@ -9,7 +9,7 @@ interface GridControlsProps {
 
 export default function GridControls({ gridSettings, onSettingsChange }: GridControlsProps) {
   return (
-    <div className="border rounded-lg p-4 bg-white">
+    <div className="border rounded-[2] p-4 bg-white ">
       <h2 className="text-xl font-semibold mb-4">Grid Settings</h2>
 
       <div className="space-y-4">
