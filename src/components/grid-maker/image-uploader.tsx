@@ -1,7 +1,7 @@
-// src/components/grid-maker/image-uploader.tsx
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 
 interface ImageUploaderProps {
   onImageUpload: (imageDataUrl: string) => void;
@@ -57,41 +57,45 @@ export default function ImageUploader({ onImageUpload }: ImageUploaderProps) {
   };
 
   return (
-    <div className="border-2 border-dashed rounded-lg p-6 bg-gray-50">
-      <form 
-        onDragEnter={handleDrag}
-        onSubmit={(e) => e.preventDefault()}
-        className={`h-32 flex flex-col items-center justify-center ${dragActive ? 'bg-blue-50 border-blue-300' : ''}`}
-      >
-        <input
-          ref={inputRef}
-          type="file"
-          id="image-upload"
-          accept="image/*"
-          onChange={handleChange}
-          className="hidden"
-        />
+    <div 
+      className={`border-2 border-dashed rounded-lg p-8 transition-all duration-200 h-full flex flex-col items-center justify-center ${
+        dragActive ? 'bg-blue-50 border-blue-400' : 'bg-gray-50 border-gray-300 hover:border-blue-300 hover:bg-gray-100'
+      }`}
+      onDragEnter={handleDrag}
+      onDragLeave={handleDrag}
+      onDragOver={handleDrag}
+      onDrop={handleDrop}
+    >
+      <input
+        ref={inputRef}
+        type="file"
+        id="image-upload"
+        accept="image/*"
+        onChange={handleChange}
+        className="hidden"
+      />
+      
+    
+      
+      <div className="text-center">
+        <h3 className="text-lg font-medium text-gray-800 mb-2">Upload Reference Image</h3>
+        <p className="text-gray-600 mb-6 max-w-md">
+          Drag and drop your reference image here, or click the button below to browse your files
+        </p>
         
-        <div className="text-center">
-          <p className="text-gray-600 mb-4">Drag and drop your image here or click to browse</p>
-          <button 
-            type="button"
-            onClick={onButtonClick}
-          >
-            Upload Image
-          </button>
-        </div>
+        <button 
+          type="button"
+          onClick={onButtonClick}
+          className="px-5 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition shadow-sm flex items-center justify-center mx-auto"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0l-4 4m4-4v12" />
+          </svg>
+          Upload Image
+        </button>
         
-        {dragActive && (
-          <div
-            className="absolute inset-0 h-full w-full"
-            onDragEnter={handleDrag}
-            onDragLeave={handleDrag}
-            onDragOver={handleDrag}
-            onDrop={handleDrop}
-          />
-        )}
-      </form>
+        <p className="mt-4 text-sm text-gray-500">Supported formats: JPG, PNG, GIF, WEBP</p>
+      </div>
     </div>
   );
 }

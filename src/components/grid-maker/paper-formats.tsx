@@ -93,14 +93,6 @@ export default function PaperFormats({ selectedFormat, onFormatChange }: PaperFo
             </div>
           </div>
         )}
-        
-        <div className="text-sm text-gray-600 p-2 bg-gray-50 rounded">
-          <p>If printing on {selectedFormat.name} paper, you will need:</p>
-          <ul className="list-disc pl-5 mt-1">
-            <li>{selectedFormat.width > 0 ? `${selectedFormat.columns - 1} vertical lines spaced ${(selectedFormat.width / selectedFormat.columns).toFixed(1)}${selectedFormat.unit} apart` : 'n/a'}</li>
-            <li>{selectedFormat.height > 0 ? `${selectedFormat.rows - 1} horizontal lines spaced ${(selectedFormat.height / selectedFormat.rows).toFixed(1)}${selectedFormat.unit} apart` : 'n/a'}</li>
-          </ul>
-        </div>
       </div>
     </div>
   );
