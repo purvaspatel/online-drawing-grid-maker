@@ -13,7 +13,14 @@ export default function Navbar() {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Left Side - Logo & Brand Name */}
         <div className="flex items-center space-x-3">
-          <Image src="/gridmakerlogo.png" alt="Brand Logo" className="w-12" />
+          <Image
+            src="/gridmakerlogo.png"
+            alt="Brand Logo"
+            width={500}
+            height={500}
+            className="w-12 h-12"
+          />
+
           <Link href="/" className="text-xl font-bold text-gray-800">
             Grid Maker
           </Link>

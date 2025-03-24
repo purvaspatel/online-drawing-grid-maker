@@ -52,7 +52,7 @@ export default function GridMaker() {
 
   return (
     <div className="container mx-auto p-4 ">
-      
+
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-1">
           {!image ? (
@@ -181,7 +181,7 @@ export default function GridMaker() {
                         </label>
                       </div>
 
-                      
+
                     </div>
                   </div>
 
@@ -288,9 +288,10 @@ export default function GridMaker() {
                 src="/purvagridmakerpreview.gif"
                 alt="Website Interface Preview"
                 className="w-full h-full object-contain p-2"
+                width={1000}
+                height={1000}
               />
             </div>
-
           )}
         </div>
       </div>
