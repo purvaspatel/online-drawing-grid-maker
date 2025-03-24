@@ -13,7 +13,8 @@ export default function BlogIndex() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (
           <article key={post.slug} className="bg-white border shadow-md overflow-hidden">
-            <Image src={post.coverImage} alt={post.title} className="w-full h-48 object-cover" />
+            <Image src={post.coverImage} alt={post.title} className="w-full h-48 object-cover" width={500} 
+  height={500}  />
             <div className="p-6">
               <span className="text-blue-600 text-sm font-medium flex items-center">
                 <Tag className="w-3 h-3 mr-1" /> {post.category}

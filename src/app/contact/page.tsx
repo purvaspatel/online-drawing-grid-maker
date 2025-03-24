@@ -21,6 +21,7 @@ export default function ContactPage() {
             alt="Purva Patel"
             fill
             className="object-cover"
+            
           />
         </div>
         

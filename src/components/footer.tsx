@@ -14,8 +14,8 @@ export function SiteFooter() {
                             <Image
                                 src="/gridmakerlogo.png" // Replace with your logo
                                 alt="GridDraw - Free Grid Drawing Tools"
-                                width={32}
-                                height={32}
+                                width={500}
+                                height={500}
                                 className="h-15 w-auto"
                             />
                             <span className="text-xl font-bold text-gray-900 dark:text-white">GridDraw</span>

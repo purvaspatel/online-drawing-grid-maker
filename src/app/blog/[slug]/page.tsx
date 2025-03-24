@@ -5,6 +5,12 @@ import { markdownToHtml } from "@/lib/markdown";
 import { formatDate } from "@/lib/utils";
 import { Calendar, User, ArrowLeft, Tag, Clock } from "lucide-react";
 import Image from "next/image";
+
+interface BlogPageProps {
+    params: {
+      slug: string;
+    };
+  }
 export async function generateMetadata({ params }: { params: { slug?: string } }) {
     if (!params?.slug) {
         return notFound();
@@ -36,7 +42,7 @@ export function generateStaticParams() {
         .map((post) => ({ slug: post.slug }));
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: BlogPageProps) {
     const post = getPostBySlug(params.slug, ["title", "date", "author", "content", "coverImage", "category", "tags", "readingTime", "excerpt"]);
 
     if (!post) {
@@ -99,6 +105,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                         alt={post.title}
                         className="w-full h-auto object-cover"
                         loading="lazy"
+                        width={500}
+                        height={500}
                     />
                 </div>
             )}
