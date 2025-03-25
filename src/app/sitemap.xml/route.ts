@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getAllPosts } from "@/lib/api"; // Adjust path if needed
 
 export async function GET() {
-  const siteUrl = "https://gridmaker.vercel.app/";
+  const siteUrl = "https://gridmaker.vercel.app";
 
   // Static Pages
   const staticPaths = ["/", "/artworks", "/blog", "/contact"];
