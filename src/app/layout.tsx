@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { SiteFooter } from "@/components/footer";
-
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,11 +12,11 @@ export const metadata = {
   openGraph: {
     title: "Artist Grid Maker",
     description: "Create customizable grids for your artwork, a free online grid maker tool for artists/beginners",
-    url: "https://gridmaker.vercel.app/", 
+    url: "https://gridmaker.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://gridmaker.vercel.app/gridmakersharelink.png", 
+        url: "https://gridmaker.vercel.app/gridmakersharelink.png",
         width: 1200,
         height: 630,
         alt: "Artist Grid Maker Preview",
@@ -27,8 +27,8 @@ export const metadata = {
     card: "summary_large_image",
     title: "Artist Grid Maker",
     description: "Create online free grids for your artwork",
-    site: "@purvaspatel", 
-    image: "https://gridmaker.vercel.app/gridmakersharelink.png", 
+    site: "@purvaspatel",
+    image: "https://gridmaker.vercel.app/gridmakersharelink.png",
   },
 };
 
@@ -56,6 +56,7 @@ export default function RootLayout({
         <meta name="twitter:site" content="@purvaspatel" />
       </head>
       <body className={inter.className}>
+        <Analytics />
         <Navbar />
         {children}
         <SiteFooter />
