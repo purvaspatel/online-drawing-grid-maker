@@ -75,11 +75,11 @@ export default async function BlogPost({ params }: BlogPageProps) {
                     ))}
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
+                <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
                     {post.title}
                 </h1>
 
-                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{post.excerpt}</p>
+                <p className="text-xl text-gray-600  mb-8">{post.excerpt}</p>
 
                 <div className="flex items-center space-x-6 text-gray-500 dark:text-gray-400">
                     <div className="flex items-center">
