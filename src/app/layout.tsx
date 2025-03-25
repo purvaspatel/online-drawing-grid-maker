@@ -40,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="OlCBXN1AhSOlPfytynFjCcPiqB6TEHeOKdM4d1c84NY" />
         {/* Open Graph Meta Tags (Facebook, LinkedIn, WhatsApp, etc.) */}
         <meta property="og:title" content="Artist Grid Maker" />
         <meta property="og:description" content="Create customizable grids for your artwork, a free online grid maker tool for artists/beginners" />
