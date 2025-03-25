@@ -82,7 +82,7 @@ export default function Home() {
             <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Ruler className="w-10 h-10 text-blue-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Perfect Proportions</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Divide your canvas into precise sections to capture accurate proportions in portraits, 
                 landscapes, and complex compositions.
               </p>
@@ -90,7 +90,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Maximize className="w-10 h-10 text-green-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Scale with Precision</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Easily transfer images from one size to another while maintaining perfect proportions, 
                 ideal for murals or miniatures.
               </p>
@@ -98,7 +98,7 @@ export default function Home() {
             <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Palette className="w-10 h-10 text-purple-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Customizable Grids</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Adjust grid size, line thickness, colors, and opacity to match your artistic style 
                 and medium, from pencil to digital.
               </p>
@@ -106,7 +106,7 @@ export default function Home() {
             <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Download className="w-10 h-10 text-indigo-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Easy Export Options</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Download your custom grid as PNG, JPG, or PDF - ready to print or use digitally 
                 in any software or with traditional media.
               </p>
@@ -114,7 +114,7 @@ export default function Home() {
             <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Image className="w-10 h-10 text-amber-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Reference Image Overlay</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Upload reference photos and overlay your grid directly on them for 
                 the most accurate transfer to your canvas.
               </p>
@@ -122,14 +122,14 @@ export default function Home() {
             <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Layers className="w-10 h-10 text-rose-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Multiple Grid Types</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Choose from square, rectangular, triangular, or isometric grids to match your 
                 specific artistic technique and subject matter.
               </p>
             </div>
           </div>
           
-          <div className="prose max-w-none dark:prose-invert mb-16">
+          <div className="prose max-w-none  mb-16">
             <h2 className="text-2xl md:text-3xl font-bold flex items-center">
               <Star className="w-8 h-8 mr-3 text-yellow-500" />
               Why Artists Throughout History Have Used Grid Drawing Techniques
@@ -212,7 +212,7 @@ export default function Home() {
             
             <div className="mt-8 space-y-4">
               <h3 className="text-xl font-semibold">Keywords and Search Terms:</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-sm text-gray-600  leading-relaxed">
                 grid drawing tool, artist grid generator, drawing grid maker, free grid generator for artists, 
                 proportional grid maker, art scaling grid, square grid for drawing, grid method for art, 
                 grid transfer technique, printable art grid, custom grid for drawing, image grid transfer tool, 
@@ -222,7 +222,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 p-8 rounded-[2] text-center">
+          <div className="bg-gradient-to-r from-blue-100 to-purple-100   p-8 rounded-[2] text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Transform Your Artistic Process?</h2>
             <p className="text-lg mb-8 max-w-3xl mx-auto">
               Create your custom grid now and join thousands of artists who've elevated their work 
