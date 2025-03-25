@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Free Online Grid Maker for Artists | Drawing Grid Generator Tool",
     description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately.",
     type: "website",
-    images: [{ url: "/grid-maker-preview.jpg" }],
+    images: [{ url: "/gridmakerlogo.png" }],
   }
 };
 

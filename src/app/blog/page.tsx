@@ -3,6 +3,19 @@ import { getAllPosts } from "@/lib/api";
 import { formatDate } from "@/lib/utils";
 import { Calendar, Tag, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Blogs | Learn how to sketch | Drawing Grid Generator Tool | Scale & Proportion Guide",
+  description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately. No signup required.",
+  keywords: "grid maker, drawing grid, art grid tool, artist grid generator, free grid maker, proportion grid, scale drawing grid, gridding technique, art transfer method, gridded paper generator, art grid pattern, square grid for drawing, reference grid, grid drawing method, art proportion tool",
+  openGraph: {
+    title: "BLogs | Free Online Grid Maker for Artists | Drawing Grid Generator Tool",
+    description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately.",
+    type: "website",
+    images: [{ url: "/gridmakerlogo.png" }],
+  }
+};
+
 export default function BlogIndex() {
   const posts = getAllPosts(["title", "date", "slug", "coverImage", "excerpt", "category"]);
 

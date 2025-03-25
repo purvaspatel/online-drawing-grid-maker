@@ -1,7 +1,18 @@
 // app/contact/page.tsx
 import Image from "next/image"
+import { Metadata } from "next";
 import { Mail, Github, Instagram } from "lucide-react"
-
+export const metadata: Metadata = {
+  title: "Contact | Drawing Grid Generator Tool | Scale & Proportion Guide",
+  description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately. No signup required.",
+  keywords: "grid maker, drawing grid, art grid tool, artist grid generator, free grid maker, proportion grid, scale drawing grid, gridding technique, art transfer method, gridded paper generator, art grid pattern, square grid for drawing, reference grid, grid drawing method, art proportion tool",
+  openGraph: {
+    title: "Contact | Drawing Grid Generator Tool",
+    description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately.",
+    type: "website",
+    images: [{ url: "/gridmakerlogo.png" }],
+  }
+};
 export default function ContactPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-12">
