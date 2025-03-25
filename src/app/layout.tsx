@@ -56,10 +56,11 @@ export default function RootLayout({
         <meta name="twitter:site" content="@purvaspatel" />
       </head>
       <body className={inter.className}>
-        <Analytics />
+        
         <Navbar />
         {children}
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );
