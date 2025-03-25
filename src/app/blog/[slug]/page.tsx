@@ -55,7 +55,7 @@ export default async function BlogPost({ params }: BlogPageProps) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Back button */}
             <div className="mb-8">
-                <Link href="/blog" className="inline-flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
+                <Link href="/blog" className="inline-flex items-center text-gray-600 hover:text-gray-900   transition-colors">
                     <ArrowLeft className="w-5 h-5 mr-2" />
                     <span>Back to articles</span>
                 </Link>
@@ -64,24 +64,24 @@ export default async function BlogPost({ params }: BlogPageProps) {
             {/* Article header */}
             <header className="mb-12">
                 <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 ">
                         <Tag className="w-4 h-4 mr-1.5" />
                         {post.category}
                     </span>
                     {Array.isArray(post.tags) && post.tags.map((tag) => (
-                        <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200">
+                        <span key={tag} className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800  ">
                             #{tag}
                         </span>
                     ))}
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
+                <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
                     {post.title}
                 </h1>
 
-                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{post.excerpt}</p>
+                <p className="text-xl text-gray-900 mb-8">{post.excerpt}</p>
 
-                <div className="flex items-center space-x-6 text-gray-500 dark:text-gray-400">
+                <div className="flex items-center space-x-6 text-gray-500 ">
                     <div className="flex items-center">
                         <User className="w-5 h-5 mr-2" />
                         <span>{post.author}</span>
@@ -131,7 +131,7 @@ export default async function BlogPost({ params }: BlogPageProps) {
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
             {/* Article footer */}
-            <footer className="border-t border-gray-200 dark:border-gray-700 pt-8">
+            <footer className="border-t border-gray-200  pt-8">
                 <div className="flex flex-wrap justify-between items-center gap-4 mb-8">
                     {/* Left Side: Create Grid Button */}
                     <div>
