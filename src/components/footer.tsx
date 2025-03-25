@@ -18,7 +18,7 @@ export function SiteFooter() {
                                 height={500}
                                 className="h-15 w-auto"
                             />
-                            <span className="text-xl font-bold text-gray-900 dark:text-white">GridDraw</span>
+                            <span className="text-xl font-bold text-gray-900 dark:text-white">Grid Maker</span>
                         </Link>
                         <p className="text-gray-600 dark:text-gray-400 text-sm">
                             Free tools to help artists master proportions through grid techniques.
