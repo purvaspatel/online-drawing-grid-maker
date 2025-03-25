@@ -31,6 +31,9 @@ export default function Navbar() {
           <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
             Grid Maker
           </Link>
+          <Link href="/artworks" className="text-gray-700 hover:text-blue-600 transition">
+            ArtWorks
+          </Link>
           <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition">
             Blogs
           </Link>
@@ -55,6 +58,9 @@ export default function Navbar() {
           <div className="flex flex-col space-y-3 py-4 px-6">
             <Link href="/" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
               Grid Maker
+            </Link>
+            <Link href="/artworks" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
+              ArtWorks
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
               Blogs
