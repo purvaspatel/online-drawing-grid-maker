@@ -8,9 +8,9 @@ import Image from "next/image";
 
 interface BlogPageProps {
     params: {
-      slug: string;
+        slug: string;
     };
-  }
+}
 export async function generateMetadata({ params }: { params: { slug?: string } }) {
     if (!params?.slug) {
         return notFound();
@@ -113,21 +113,21 @@ export default async function BlogPost({ params }: BlogPageProps) {
 
             {/* Article content */}
             <article className="prose prose-lg max-w-none 
-  dark:prose-invert 
   prose-headings:font-bold prose-headings:mt-8 prose-headings:mb-4
   prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
   prose-p:my-4 prose-p:leading-relaxed
-  prose-a:text-blue-600 hover:prose-a:text-blue-800 dark:prose-a:text-blue-400 dark:hover:prose-a:text-blue-300
-  prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-800 prose-blockquote:px-6 prose-blockquote:py-4 prose-blockquote:rounded-r-lg
+  prose-a:text-blue-600 hover:prose-a:text-blue-800 
+  prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-gray-50 prose-blockquote:px-6 prose-blockquote:py-4 prose-blockquote:rounded-r-lg
   prose-ul:list-disc prose-ol:list-decimal prose-li:my-2
   prose-img:rounded-xl prose-img:shadow-lg prose-img:mx-auto
   prose-strong:font-semibold prose-em:italic
   prose-pre:bg-gray-800 prose-pre:rounded-xl prose-pre:p-4
-  prose-code:bg-gray-100 dark:prose-code:bg-gray-700 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+  prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
   prose-table:border-collapse prose-table:w-full
-  prose-th:bg-gray-100 dark:prose-th:bg-gray-700 prose-th:p-3 prose-th:text-left
-  prose-td:border prose-td:border-gray-200 dark:prose-td:border-gray-700 prose-td:p-3
+  prose-th:bg-gray-100 prose-th:p-3 prose-th:text-left
+  prose-td:border prose-td:border-gray-200 prose-td:p-3
   mb-16">
+
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             </article>
             {/* Article footer */}
@@ -136,11 +136,11 @@ export default async function BlogPost({ params }: BlogPageProps) {
                     {/* Left Side: Create Grid Button */}
                     <div>
                         <Link href="/" className="inline-flex items-center px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                            Explore our free grid maker tool 
+                            Explore our free grid maker tool
                         </Link>
                     </div>
 
-                    
+
                 </div>
             </footer>
 

@@ -7,7 +7,7 @@ export default function BlogIndex() {
   const posts = getAllPosts(["title", "date", "slug", "coverImage", "excerpt", "category"]);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 bg-white">
       <h1 className="text-4xl font-bold text-center mb-8">Art Blog Section</h1>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
