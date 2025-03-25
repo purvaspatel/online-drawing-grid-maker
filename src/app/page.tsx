@@ -44,24 +44,24 @@ export default function Home() {
         </div>
         <section className="text-center mb-12">
           
-          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-700 dark:text-gray-300">
+          <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-700 ">
             Transform your artistic process with professional drawing grids that perfect proportions, 
             scale artwork, and help transfer complex images with pinpoint accuracy.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <span className="inline-flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
+            <span className="inline-flex items-center px-4 py-2 bg-gray-100  rounded-full text-sm">
               <Zap className="w-4 h-4 mr-2 text-yellow-500" />
               No Registration
             </span>
-            <span className="inline-flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
+            <span className="inline-flex items-center px-4 py-2 bg-gray-100  rounded-full text-sm">
               <Download className="w-4 h-4 mr-2 text-green-500" />
               Instant Downloads
             </span>
-            <span className="inline-flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
+            <span className="inline-flex items-center px-4 py-2 bg-gray-100  rounded-full text-sm">
               <Palette className="w-4 h-4 mr-2 text-purple-500" />
               Fully Customizable
             </span>
-            <span className="inline-flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
+            <span className="inline-flex items-center px-4 py-2 bg-gray-100  rounded-full text-sm">
               <Users className="w-4 h-4 mr-2 text-blue-500" />
               40,000+ Artists Use It
             </span>
@@ -79,7 +79,7 @@ export default function Home() {
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Ruler className="w-10 h-10 text-blue-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Perfect Proportions</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -87,7 +87,7 @@ export default function Home() {
                 landscapes, and complex compositions.
               </p>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Maximize className="w-10 h-10 text-green-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Scale with Precision</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -95,7 +95,7 @@ export default function Home() {
                 ideal for murals or miniatures.
               </p>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Palette className="w-10 h-10 text-purple-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Customizable Grids</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -103,7 +103,7 @@ export default function Home() {
                 and medium, from pencil to digital.
               </p>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Download className="w-10 h-10 text-indigo-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Easy Export Options</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -111,7 +111,7 @@ export default function Home() {
                 in any software or with traditional media.
               </p>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Image className="w-10 h-10 text-amber-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Reference Image Overlay</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -119,7 +119,7 @@ export default function Home() {
                 the most accurate transfer to your canvas.
               </p>
             </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white  p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <Layers className="w-10 h-10 text-rose-500 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Multiple Grid Types</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -141,7 +141,7 @@ export default function Home() {
               into manageable sections, allowing artists to accurately capture proportions and spatial relationships.
             </p>
             
-            <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg my-8 border-l-4 border-blue-500">
+            <div className="bg-blue-50  p-6 rounded-lg my-8 border-l-4 border-blue-500">
               <h3 className="text-xl font-semibold mb-2">Did You Know?</h3>
               <p>
                 Leonardo da Vinci used grid systems to create his anatomically accurate drawings. 
@@ -179,22 +179,22 @@ export default function Home() {
             <h3 className="text-xl font-bold mt-8">Popular Uses for Our Grid Maker Tool:</h3>
             
             <div className="grid sm:grid-cols-2 gap-4 mt-4">
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <div className="bg-gray-50  p-4 rounded">
                 <span className="font-medium">Portrait Drawing</span> - Capture facial proportions accurately
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <div className="bg-gray-50  p-4 rounded">
                 <span className="font-medium">Landscape Art</span> - Maintain perspective and scale
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <div className="bg-gray-50  p-4 rounded">
                 <span className="font-medium">Wildlife Illustration</span> - Detail complex animal features
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <div className="bg-gray-50  p-4 rounded">
                 <span className="font-medium">Comic Book Creation</span> - Maintain character consistency
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <div className="bg-gray-50  p-4 rounded">
                 <span className="font-medium">Architectural Drawing</span> - Scale buildings and structures
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded">
+              <div className="bg-gray-50  p-4 rounded">
                 <span className="font-medium">Pattern Design</span> - Create repeating elements with precision
               </div>
             </div>
