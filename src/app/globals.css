@@ -12,13 +12,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* REMOVE prefers-color-scheme: dark to prevent dark mode */
 body {
   background: var(--background);
   color: var(--foreground);
@@ -36,18 +30,18 @@ body {
 
 .prose h1 {
   font-size: 2rem;
-  color: #000000d7; /* Blue */
+  color: #000000d7;
 }
 
 .prose h2 {
   font-size: 1.75rem;
-  color: #000000; /* Slightly lighter blue */
+  color: #000000;
 }
 
 .prose p {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: #374151; /* Dark gray */
+  color: #374151;
 }
 
 .prose blockquote {
@@ -67,4 +61,3 @@ body {
   list-style: decimal;
   padding-left: 1.5rem;
 }
-

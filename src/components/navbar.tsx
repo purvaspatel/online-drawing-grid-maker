@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link href="/" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
               Grid Maker
             </Link>
-            <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
+            <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>
               Blogs
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition" onClick={() => setMenuOpen(false)}>

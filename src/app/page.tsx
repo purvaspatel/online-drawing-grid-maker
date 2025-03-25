@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen py-8">
+    <main className="min-h-screen py-8 bg-white">
       <div className="container mx-auto px-4">
         <section className="text-center mb-5">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
