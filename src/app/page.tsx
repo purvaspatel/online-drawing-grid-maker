@@ -19,8 +19,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Free Online Grid Maker for Artists | Drawing Grid Generator Tool | Scale & Proportion Guide",
   description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately. No signup required.",
-  keywords: "grid maker, drawing grid, art grid tool, artist grid generator, free grid maker, proportion grid, scale drawing grid, gridding technique, art transfer method, gridded paper generator, art grid pattern, square grid for drawing, reference grid, grid drawing method, art proportion tool",
-  openGraph: {
+  keywords: "grid maker, drawing grid, free online grid tool, artist grid generator, grid drawing method, scale drawing grid, grid drawing tool online free, online grid maker, proportion grid creator, art grid tool, grid generator for drawing, gridding technique, drawing assistance tool",  openGraph: {
     title: "Free Online Grid Maker for Artists | Drawing Grid Generator Tool",
     description: "Create professional drawing grids for art projects with our free online grid maker. Perfect for artists, students & teachers. Customize grid lines, scale artwork, improve proportions & transfer images accurately.",
     type: "website",
