@@ -54,6 +54,7 @@ export default function RootLayout({
         <meta name="twitter:description" content="Create customizable grids for your artwork" />
         <meta name="twitter:image" content="https://gridmaker.vercel.app/gridmakersharelink.png" />
         <meta name="twitter:site" content="@purvaspatel" />
+        
       </head>
       <body className={inter.className}>
         
@@ -61,6 +62,8 @@ export default function RootLayout({
         {children}
         <SiteFooter />
         <Analytics />
+
+        
       </body>
     </html>
   );
